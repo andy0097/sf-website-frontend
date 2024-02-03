@@ -13,7 +13,7 @@ export default function CTACard({imgSrc, headline, desc, btnText, path}:Props){
 
     return(
         <div className="w-full flex flex-col md:flex-row text-sf_white">
-            <img
+            <Image
                 src={imgSrc} 
                 alt='call to action image' 
                 className="md:rounded-l-lg md:rounded-r-none rounded-t-lg object-cover md:w-[40%] w-full"    
