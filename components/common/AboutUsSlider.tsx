@@ -27,7 +27,7 @@ export default function AboutUsSlider(){
             
         });
 
-        gsap.utils.toArray(".element").forEach((element)=>{
+        gsap.utils.toArray(".element").forEach((element:any)=>{
             const tlenter = gsap.timeline();
             tlenter.fromTo(element,{opacity: 0}, {opacity:1, duration:3})
             .to(element,{opacity: 0});

@@ -4,7 +4,7 @@ import Link from 'next/link';
 interface Props {
 	labelId: string;
 	type: string;
-	onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+	onChange: (event: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) => void;
 	value: string;
 	children: React.ReactNode;
 	link?: {

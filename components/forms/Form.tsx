@@ -23,7 +23,7 @@ interface Props {
 	// enter any tailwind class specific for this form
 	customClass?: string;
 	formSize?: string;
-	onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+	onChange: (event: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) => void;
 	onSubmit: (event: FormEvent<HTMLFormElement>) => void;
 }
 

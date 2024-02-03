@@ -28,8 +28,8 @@ export default function Page() {
             <div className='space-y-6 md:w-6/12 md:max-w-md'>
               <h2 className='text-sf_green'>Despre Adi și Ema Ban</h2>
               <p className='text-sf_green font-normal w-11/12'>
-                Our passion is to see our own children become “all-in” disciples of Jesus while helping other's do the same.We hope you find all the resources you need here at “Intentional”. <br/><br/>
-                Our passion is to see our own children become “all-in” disciples of Jesus while helping other's do the same.We hope you find all the resources you need.
+                {`Our passion is to see our own children become “all-in” disciples of Jesus while helping other&apos;s do the same.We hope you find all the resources you need here at “Intentional”. <br/><br/>
+                Our passion is to see our own children become “all-in” disciples of Jesus while helping other&apos;s do the same.We hope you find all the resources you need.`}
               </p>
               <div className='flex items-start'>
                 <PrimaryButtonDark buttonText='Mai multe' path='/about-us'/>
