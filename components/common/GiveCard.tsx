@@ -16,7 +16,7 @@ export default function GiveCard(){
     return(
         <>
             <div className = 'w-full flex justify-center'>
-                <div className = 'w-4/5 bg-sf_lightblue rounded-[12px] shadow-md py-8 md:px-20 px-12 max-w-screen-sm '>
+                <div className = 'w-full bg-sf_lightblue rounded-[12px] shadow-md py-8 md:px-20 px-12 max-w-screen-sm '>
                     <div className='mb-11'>
                         {/*Recurenta */}
                         <h3 className ='text-sf_green mb-6'>Recurență</h3>

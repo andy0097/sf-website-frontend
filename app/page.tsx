@@ -1,5 +1,6 @@
+
 import Image from 'next/image'
-import{ SecondaryButton, PrimaryButtonDark, PrimaryButtonLight, SecondaryButtonDark } from '@/components/buttons/index';
+import { PrimaryButtonDark, SecondaryButtonDark } from '@/components/buttons/index';
 import { Hero, AboutUsSlider, TestimonialWrap, CTACard } from '@/components/common';
 import { ToastContainer } from 'react-toastify';
 import { AskQuestionForm } from '@/components/forms';
@@ -8,10 +9,11 @@ import aboutUs from '@/public/img/about_Adi&Ema.png'
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Page() {
+  
   return (
     <>
       <Hero/>
-      <section className='w-full h-[496px] bg-sf_offwhite flex justify-center items-center'>
+      <section className=' w-full h-[496px] bg-sf_offwhite flex justify-center items-center'>
         <div className='max-w-7xl w-4/5 flex flex-col justify-center items-center'>
           <div className='w-6/12 space-y-2'>
             <h2 className='text-sf_green text-center'>Familia este acolo unde te simți acasă, investește în ea!</h2>
@@ -25,8 +27,8 @@ export default function Page() {
             <div className='md:max-w-md md:p-8'>
               <Image src={aboutUs} alt='photo with Adi and Ema'/>
             </div>
-            <div className='space-y-6 md:w-6/12 md:max-w-md'>
-              <h2 className='text-sf_green'>Despre Adi și Ema Ban</h2>
+            <div className=' space-y-6 md:w-6/12 md:max-w-md'>
+              <h2 className=' text-sf_green'>Despre Adi și Ema Ban</h2>
               <p className='text-sf_green font-normal w-11/12'>
                 {`Our passion is to see our own children become “all-in” disciples of Jesus while helping other&apos;s do the same.We hope you find all the resources you need here at “Intentional”. <br/><br/>
                 Our passion is to see our own children become “all-in” disciples of Jesus while helping other&apos;s do the same.We hope you find all the resources you need.`}
@@ -44,7 +46,7 @@ export default function Page() {
       </section>
       <section className='w-full bg-sf_lightblue flex justify-center'>
         <div className='max-w-7xl w-6/12 justify-center flex flex-col md:pb-72 py-24 items-center'>
-          <div className='text-center text-sf_green'>
+          <div className='slideUp text-center text-sf_green'>
             <h2>Ne poți asculta atât pe Spotify cât și pe Apple Podcast, și nu uita să ne urmărești pe social media pentru ultimele detalii.</h2>
           </div>
           <div className='flex lg:flex-row flex-col lg:w-10/12 justify-between mt-10 max-w-md space-y-6 lg:space-y-0' >

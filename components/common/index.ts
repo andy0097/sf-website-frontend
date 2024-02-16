@@ -10,3 +10,6 @@ export { default as AboutUsSlider } from '@/components/common/AboutUsSlider';
 export { default as TestimonialCard } from '@/components/common/TestimonialCard';
 export { default as TestimonialWrap } from '@/components/common/TestimonialSection';
 export { default as CTACard  } from '@/components/common/CTACard';
+export { default as AboutUsHeroSlider } from '@/components/common/AboutUsHeroSlider';
+export {default as AboutUsSlide } from '@/components/common/AboutUsSlide';
+export { default as DonateHeroSection } from '@/components/common/DonateHeroSection';
