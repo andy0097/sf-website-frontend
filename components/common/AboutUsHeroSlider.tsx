@@ -19,8 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutUsHeroSlider(){
 
-    const height ='h-['+ data.length * 50 + 'vh]';
-    console.log(height);
+    const height ='h-['+ data.length * 100 + 'vh]';
 
     // Initialize GSAP
     useGSAP(() => {
@@ -30,10 +29,11 @@ export default function AboutUsHeroSlider(){
         tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.slide-container',
-                pin: true,
                 scrub: 1,
+                start: 'top 50%',
                 end: '+=2500px',
-                anticipatePin: 1
+                anticipatePin: 1,               
+                
             }
         });
 
@@ -53,19 +53,19 @@ export default function AboutUsHeroSlider(){
 
     return(
         <section className="bg-sf_offwhite w-screen h-fit flex justify-center">
-            <div className='w-full justify-start flex flex-col lg:flex-row lg:pt-20'>
-                <div className="w-10/12  lg:w-7/12 max-w-4xl max-h-screen sticky top-8 lg:top-0" >
+            <div className={`w-full justify-start flex flex-col lg:flex-row lg:pt-20 h-[150vh]`}>
+                <div className="w-10/12  lg:w-7/12 max-w-4xl  sticky top-8 lg:top-0 h-fit" >
                     <Image
                         src={image1}
                         alt='photo with Adi & Ema Ban'
                         className="w-full"
                     />
                 </div>
-                <div className='w-full lg:w-5/12 px-14 max-w-2xl text-sf_green space-y-12 mt-52'>
-                    <div className="sticky top-1/2 lg:top-52 h-[70vh]">
+                <div className='w-full lg:w-5/12 px-14 max-w-2xl text-sf_green space-y-12 mt-52 sticky top-32 h-fit'>
+                    <div className=" top-1/2 lg:top-52">
                         <h2>Povestea noastră</h2>
                     </div>
-                    <div className={'slide-container align-top relative'+ ' ' + height}>
+                    <div className={'slide-container align-top relative'+' '}>
                         {data.map((x,i)=>{
                             return (
                                 <AboutUsSlide

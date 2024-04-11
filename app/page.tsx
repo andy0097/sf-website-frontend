@@ -9,6 +9,8 @@ import aboutUs from '@/public/img/about_Adi&Ema.png'
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Page() {
+  const posts = getPosts()
+  console.log(posts);
   
   return (
     <>
@@ -111,4 +113,16 @@ export default function Page() {
         
  
   )
+}
+
+
+async function getPosts(){
+  const posts = await fetch('http://127.0.0.1:800/posts',{
+    method: 'GET',
+  });
+
+  if(!posts.ok){
+    throw new Error('Failed to get posts');
+  }
+  return Promise.resolve();
 }
