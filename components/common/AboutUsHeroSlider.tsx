@@ -48,13 +48,20 @@ export default function AboutUsHeroSlider(){
             duration: 5,
         });
 
+        gsap.to(".text-hide", {
+            scrollTrigger: ".trigger",
+            opacity:0,
+            duration: 0.5,
+        });
+
+
     });
     
 
     return(
         <section className="bg-sf_offwhite w-screen h-fit flex justify-center">
-            <div className={`w-full justify-start flex flex-col lg:flex-row lg:pt-20 h-[150vh]`}>
-                <div className="w-10/12  lg:w-7/12 max-w-4xl  sticky top-8 lg:top-0 h-fit" >
+            <div className={`w-full justify-start flex flex-col lg:flex-row lg:pt-20 h-[250vh]`}>
+                <div className=" w-10/12  lg:w-7/12 max-w-4xl  sticky top-8 lg:top-0 h-fit" >
                     <Image
                         src={image1}
                         alt='photo with Adi & Ema Ban'
@@ -62,7 +69,7 @@ export default function AboutUsHeroSlider(){
                     />
                 </div>
                 <div className='w-full lg:w-5/12 px-14 max-w-2xl text-sf_green space-y-12 mt-52 sticky top-32 h-fit'>
-                    <div className=" top-1/2 lg:top-52">
+                    <div className=" top-1/2 lg:top-52 text-hide">
                         <h2>Povestea noastră</h2>
                     </div>
                     <div className={'slide-container align-top relative'+' '}>
@@ -77,11 +84,14 @@ export default function AboutUsHeroSlider(){
                             );
                         })}
                         
+                        
                     </div>
                 </div>
             </div>
+            <div className="trigger"></div>
 
         </section>
+        
         
     )
 }
