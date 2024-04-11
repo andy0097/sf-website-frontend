@@ -47,14 +47,6 @@ export default function AboutUsHeroSlider(){
             stagger: 3,
             duration: 5,
         });
-
-        gsap.to(".text-hide", {
-            scrollTrigger: ".trigger",
-            opacity:0,
-            duration: 0.5,
-        });
-
-
     });
     
 
@@ -69,7 +61,7 @@ export default function AboutUsHeroSlider(){
                     />
                 </div>
                 <div className='w-full lg:w-5/12 px-14 max-w-2xl text-sf_green space-y-12 mt-52 sticky top-32 h-fit'>
-                    <div className=" top-1/2 lg:top-52 text-hide">
+                    <div className=" top-1/2 lg:top-52">
                         <h2>Povestea noastră</h2>
                     </div>
                     <div className={'slide-container align-top relative'+' '}>
@@ -88,8 +80,6 @@ export default function AboutUsHeroSlider(){
                     </div>
                 </div>
             </div>
-            <div className="trigger"></div>
-
         </section>
         
         
